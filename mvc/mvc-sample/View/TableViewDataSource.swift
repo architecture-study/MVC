@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewDataSource : NSObject, UITableViewDataSource {
+class TableViewDataSource : NSObject, UITableViewDataSource, UITableViewDelegate {
     var tableView: UITableView
     
     var dataSource: [Repo] = [] {

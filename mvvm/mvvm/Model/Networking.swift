@@ -1,8 +1,8 @@
 //
 //  Networking.swift
-//  mvc-sample
+//  mvvm
 //
-//  Created by Mike Choi on 7/30/17.
+//  Created by Mike Choi on 8/17/17.
 //  Copyright © 2017 Mike Choi. All rights reserved.
 //
 
@@ -28,6 +28,7 @@ final class WebService {
         URLSession.shared.dataTask(with: resource.url) { data, _, _ in
             let res = data.flatMap(resource.parse)
             completion(res)
-        }.resume()
+            }.resume()
     }
 }
+

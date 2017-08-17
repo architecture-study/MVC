@@ -17,7 +17,7 @@ protocol RepoHandler: class {
     func fetchRepos()
 }
 
-final class ReposController: RepoHandler {
+final class RepoPresenter: RepoHandler {
     var delegate: RepoDelegate?
     
     func fetchRepos() {

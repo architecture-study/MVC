@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class TableViewDataSource<A>: NSObject, UITableViewDataSource, UITableViewDelegate {
+class TableViewDataSource<A>: NSObject, UITableViewDataSource {
     var tableView: UITableView
     var configure: (UITableViewCell, A) -> ()
     var dataSource: [A] = [] {

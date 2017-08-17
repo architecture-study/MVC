@@ -11,14 +11,14 @@ import Foundation
 typealias JSONDict = [String:Any]
 
 struct Repo {
-    let id: Int
+    let url: String
     let name: String
 }
 
 extension Repo {
     init?(dict: JSONDict) {
-        guard let id = dict["id"] as? Int, let name = dict["name"] as? String else { return nil }
-        self.id = id
+        guard let url = dict["url"] as? String, let name = dict["name"] as? String else { return nil }
+        self.url = url
         self.name = name
     }
 }

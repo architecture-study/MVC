@@ -15,7 +15,6 @@ final class RepoUIController: RepoDelegate {
     var repos: [Repo] = [] {
         didSet {
             tableDataSource.dataSource = repos
-            print(repos)
         }
     }
     

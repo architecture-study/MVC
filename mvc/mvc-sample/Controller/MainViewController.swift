@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     var repoHandler: RepoHandler
     var uiController: RepoUIController!
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.repoHandler = ReposController()
+        self.repoHandler = RepoHandler()
         super.init(coder: aDecoder)
     }
     
